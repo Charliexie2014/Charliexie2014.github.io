@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+
+html {
+margin: 0;
+padding: 0;
+}
+body {
+background: #cccccc;
+margin: 20px 0;
+text-align: center;
+color: #152628;
+font-size: 11px;
+}
+a {
+color: #152628;
+font-size: 1.15em;
+font-style: italic;
+text-decoration: underline;
+}
+a:link, a:visited {
+font-weight: normal;
+}
+a:hover {
+font-weight: bold;
+}
+#header, #general, #objective, #skillareas, #history, #awards, #lastModified, #copyright {
+width: 720px;
+margin: 0 auto;
+text-align: left;
+border-left: 8px solid #f3fff4;
+border-right: 8px solid #f3fff4;
+}
+#header {
+background: url(ui/1/header.gif);
+height: 200px;
+border-top: 8px solid #f3fff4;
+}
+#header h1#title {
+position: relative;
+top: 5px;
+left: 50px;
+color: #ddfbb2;
+font-size: 18px;
+margin: 0;
+}
+#general {
+background: #86be76;
+border-top: 1px solid #f3fff4;
+border-bottom: 1px solid #f3fff4;
+}
+#general .row {
+margin: 5px 20px;
+}
+#general .row #realname, #general .row #titlename, #general .row #birthday, #general .row #phone, #general .row #mobile, #general .row #email, #general .row #homepage, #general .row #im {
+float: left;
+width: 140px;
+font-size: 13px;
+font-style: normal;
+font-weight: bold;
+}
+#general .row #realnameValue, #general .row #titleValue, #general .row #birthdayValue, #general .row #phoneValue, #general .row #mobileValue, #general .row #emailValue, #general .row #homepageValue, #general .row #imValue {
+color: #000;
+text-decoration: underline;
+}
+#objective h2, #skillareas h2, #history h2, #awards h2 {
+position: relative;
+margin: 0;
+top: 20px;
+left: 20px;
+font-size: 18px;
+}
+#objective {
+background: url(ui/1/ui.gif);
+height: 100px;
+color: #f3fff4;
+border-bottom: 1px solid #f3fff4;
+}
+#objective p {
+position: relative;
+top: 10px;
+left: 20px;
+color: #ddfbb2;
+font-size: 16px;
+font-weight: bold;
+}
+#skillareas {
+background: #92DCAF;
+color: #152628;
+border-bottom: 1px solid #f3fff4;
+}
+#skillareas ol {
+margin: 30px;
+padding: 0;
+list-style-type: upper-roman;
+}
+#skillareas ol li.skill {
+margin: 0 40px;
+font-size: 13px;
+padding: 0;
+}
+#skillareas ol li.skill h3 {
+color: #152628;
+font-size: 13px;
+margin: 10px 0;
+}
+#skillareas ol li.skill ul.skillset {
+margin: 0;
+padding: 0;
+list-style-type: lower-alpha;
+}
+#skillareas ol li.skill ul.skillset li {
+margin: 5px 40px;
+padding: 0;
+color: #000;
+text-decoration: underline;
+}
+#history {
+background: #152628 url(ui/2/grid.gif);
+color: #f3fff4;
+border-bottom: 1px solid #f3fff4;
+}
+#history ol {
+margin: 30px;
+padding: 0;
+list-style-type: upper-roman;
+}
+#history ol li.job {
+margin: 0 40px;
+font-size: 13px;
+padding: 0;
+}
+#history ol li.job h3 {
+color: #f3fff4;
+font-size: 13px;
+margin: 10px 0;
+}
+#history ol li.job div.year {
+float: left;
+color: #ddfbb2;
+font-size: 13px;
+font-weight: bold;
+}
+#history ol li.job div.employer {
+color: #ddfbb2;
+float: right;
+width: 440px;
+}
+#history ol li.job p.description {
+clear: both;
+color: #ddfbb2;
+margin: 0;
+padding: 5px 0 5px 140px;
+text-decoration: underline;
+}
+#awards {
+background: #41B8AC;
+color: #152628;
+border-bottom: 1px solid #f3fff4;
+}
+#awards ol {
+margin: 30px;
+padding: 0;
+list-style-type: upper-roman;
+}
+#awards ol li.award {
+margin: 0 40px;
+font-size: 13px;
+padding: 0;
+}
+#awards ol li.award h3 {
+color: #152628;
+font-size: 13px;
+margin: 10px 0;
+}
+#awards ol li.award div.date {
+float: left;
+color: #000;
+font-size: 13px;
+font-weight: bold;
+width: 140px;
+}
+#awards ol li.award div.organization {
+float: left;
+color: #000;
+}
+#awards ol li.award p.description {
+clear: both;
+color: #000;
+margin: 0;
+padding: 5px 0 5px 140px;
+text-decoration: underline;
+}
+#lastModified {
+color: #f3fff4;
+background: url(ui/1/btm.gif);
+height: 179px;
+text-align: right;
+}
+#copyright {
+color: #f3fff4;
+font-size: 12px;
+text-align: right;
+border-bottom: 8px solid #f3fff4;
+margin-top: -20px;
+}
+
+</style>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Charlie 的简历</title>
+</head>
+<body>
+<div id="header">
+<h1 id="title">Charlie 的简历</h1><br /><br /><hr />
+<h3>我坚信再牛逼的梦想，也抵挡不住傻逼似的坚持！</h3>
+</div>
+<div id="general">
+<div class="row">
+<label id="realname">真实姓名:</label>
+<label id="realnameValue">查理</label>
+</div>
+<div class="row">
+<label id="titlename">英文名或职称:</label>
+<label id="titleValue">Charlie</label>
+</div>
+<div class="row">
+<label id="birthday">生日:</label>
+<label id="birthdayValue">1987 年 9 月 26 日</label>
+</div>
+
+<div class="row">
+<label id="mobile">移动电话:</label>
+<label id="mobileValue">134185319**</label>
+</div>
+<div class="row">
+<label id="email">电子邮件:</label>
+<label id="emailValue">2531763117@qq.com</label>
+</div>
+<div class="row">
+<label id="homepage">主页:</label>
+<label id="homepageValue">
+<a href="https://charliexie2014.github.io/my.project/" title="主页"><mark><b>我的主页</b></mark></a>
+</label>
+</div>
+<div class="row">
+<label id="im">即时通迅:</label>
+<label id="imValue">QQ:2531763117</label>
+</div>
+</div>
+<div id="objective">
+<h2>求职意向</h2>
+<p>寻一份互联网相关专职工作如：软件工程师、WEB前端开发、Java开发工程师</p>
+</div>
+<div id="skillareas">
+<h2>技能</h2>
+<ol>
+<li class="skill">
+<h3>Java&Web</h3>
+<ul class="skillset">
+<li>精通HTML,CSS,JS能完全手工编写</li>
+<li>能熟练的用用常见的IDE工具</li>
+<li>2年以上Web开发经验,有实际项目</li>
+<li>熟悉JS框架、HTML5、CSS/CSS3前端开发技术，能够独立完成HTML5页面及样式； </li>
+<li>熟练JavaScript、Ajax等Web开发技术,熟练JQuery等JS框架 </li>
+<li>能够手写页面代码；</li>
+<li>熟练掌握DIV+CSS页面架构和布局方式，能快速高效实现各种动画交互效果；</li>
+<li>掌握基本的开发框架，spring、spring mvc、hibernate等；</li>
+<li>熟悉mysql、oracle数据库</li>
+<li>熟悉maven，git</li>
+<li>有高度的责任心，抗压力强，自我管理能力强，有良好的执行力</li>
+<li>具备良好合作态度及团队精神，并富有工作激情、创造力和责任感，能按时、高质量完成任务。</li>
+</ul>
+</li>
+<li class="skill">
+<h3>Eclipse&Myeclipse</h3>
+<ul class="skillset">
+<li>常用的开发工具Eclipse/Myeclipse/Dw/PS/Sublime</li>
+</ul>
+</li>
+<li class="skill">
+<h3>其它</h3>
+<ul class="skillset">
+<li>有用HTML5的Video/Audio开发网页，对Canvas学习并做过时钟等练习</li>
+<li>常浏览多种技术网站如GitHub等</li>
+<li>业余常待在图书馆阅读一些大神的书籍</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="history">
+<h2>学历及工作经验</h2>
+<ol>
+<li class="job">
+<h3>大学毕业</h3>
+<div class="year">2007</div>
+<div class="employer">海口经济学院</div>
+<p class="description">物流管理</p>
+</li>
+<li class="job">
+<h3>网站程序员</h3>
+<div class="year">2015年</div>
+<div class="employer">智软软件</div><br />
+</li>
+岗位职责：<br />
+1、负责PC端Web产品和移动Web产品的HTML/CSS/JS代码编写；<br />
+2、负责web端JS交互需求的实现；优化HTML代码及其结构，优化载入速度；<br />
+3、负责手机应用内嵌HTML5网页的开发；优化页面整体效果，提高用户体验；<br />
+4、利用HTML/CSS/JavaScript/BootStrap等各种Web技术进行产品的界面开发；<br />
+5、整体页面结构及样式层结构的设计、优化，对网站动态效果进行优化；<br />
+</ol>
+</div>
+<div id="awards">
+
+</div>
+<div id="lastModified"></div>
+<div id="copyright">© 2016 Charlie</div>
+</body>
+</html>
