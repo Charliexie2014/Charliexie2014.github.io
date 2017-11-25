@@ -94,3 +94,6 @@ jquery-1.6.4
 <script src=”http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.6.4.min.js”></script>
 官网jquery压缩版引用地址:
 <script src=”http://code.jquery.com/jquery-1.6.4.min.js”></script>
+
+十分钟玩转 jQuery、实例大全/http://www.cnblogs.com/suoning/p/5683047.html
+CSS 基础篇、绝对有你想要/http://www.cnblogs.com/suoning/p/5625582.html
