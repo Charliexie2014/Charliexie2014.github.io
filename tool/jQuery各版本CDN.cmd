@@ -97,3 +97,4 @@ jquery-1.6.4
 
 十分钟玩转 jQuery、实例大全/http://www.cnblogs.com/suoning/p/5683047.html
 CSS 基础篇、绝对有你想要/http://www.cnblogs.com/suoning/p/5625582.html
+Jquery API:http://api.jquery.com/
